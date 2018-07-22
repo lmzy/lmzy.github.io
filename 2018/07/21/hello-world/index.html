@@ -5,20 +5,20 @@
   
 
   
-  <title>hello-world | lzy&#39;s blog</title>
+  <title>快速搭建自己的静态博客 - hexo | lzy&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="`    hexo 基于nodejs 快速搭建 自己的blog. 很方便不错.">
+  <meta name="description" content="hexo 基于nodejs快速搭建自己的博客.参考了官方文档和其他人的blog,很快把自己的博客搭好了. 而且不用申请服务器,直接静态页面托管在github.io上,简直不要太爽^_~! 准备条件1. 安装nodejs , git 2. 安装hexo-cli         npm install -g hexo-cli 初始化项目&amp;#40;建站&amp;#41;$ hexo init myBlog">
 <meta name="keywords" content="随笔,初次接触hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hello-world">
+<meta property="og:title" content="快速搭建自己的静态博客 - hexo">
 <meta property="og:url" content="https://lzymm.github.io/2018/07/21/hello-world/index.html">
 <meta property="og:site_name" content="lzy&#39;s blog">
-<meta property="og:description" content="`    hexo 基于nodejs 快速搭建 自己的blog. 很方便不错.">
+<meta property="og:description" content="hexo 基于nodejs快速搭建自己的博客.参考了官方文档和其他人的blog,很快把自己的博客搭好了. 而且不用申请服务器,直接静态页面托管在github.io上,简直不要太爽^_~! 准备条件1. 安装nodejs , git 2. 安装hexo-cli         npm install -g hexo-cli 初始化项目&amp;#40;建站&amp;#41;$ hexo init myBlog">
 <meta property="og:locale" content="CN">
-<meta property="og:updated_time" content="2018-07-21T11:57:37.237Z">
+<meta property="og:updated_time" content="2018-07-22T05:09:31.397Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hello-world">
-<meta name="twitter:description" content="`    hexo 基于nodejs 快速搭建 自己的blog. 很方便不错.">
+<meta name="twitter:title" content="快速搭建自己的静态博客 - hexo">
+<meta name="twitter:description" content="hexo 基于nodejs快速搭建自己的博客.参考了官方文档和其他人的blog,很快把自己的博客搭好了. 而且不用申请服务器,直接静态页面托管在github.io上,简直不要太爽^_~! 准备条件1. 安装nodejs , git 2. 安装hexo-cli         npm install -g hexo-cli 初始化项目&amp;#40;建站&amp;#41;$ hexo init myBlog">
   
     <link rel="alternate" href="/atom.xml" title="lzy&#39;s blog" type="application/atom+xml">
   
@@ -79,7 +79,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      hello-world
+      快速搭建自己的静态博客 - hexo
     </h1>
   
 
@@ -87,12 +87,68 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><code>`</code><br>    hexo 基于nodejs 快速搭建 自己的blog. 很方便不错.</p>
+        <p>hexo 基于nodejs快速搭建自己的博客.<br>参考了官方文档和其他人的blog,很快把自己的博客搭好了. 而且不用申请服务器,直接静态页面托管在github.io上,简直不要太爽^_~!</p>
+<h3 id="准备条件"><a href="#准备条件" class="headerlink" title="准备条件"></a>准备条件</h3><pre><code>1. 安装nodejs , git
+2. 安装hexo-cli 
+       npm install -g hexo-cli
+</code></pre><h3 id="初始化项目-40-建站-41"><a href="#初始化项目-40-建站-41" class="headerlink" title="初始化项目&#40;建站&#41;"></a>初始化项目&#40;建站&#41;</h3><pre><code>$ hexo init myBlog      
+$ cd myBlog      
+$ npm install
+</code></pre><p>  目录结构</p>
+<pre><code>├── _config.yml    //网站的 配置 信息，您可以在此配置大部分的参数。
+├── package.json
+├── scaffolds       //模版 文件夹。当您新建文章时，Hexo 会根据 scaffold 来建立文件。
+├── source          //资源文件夹是存放用户资源的地方
+ |   ├── _drafts
+ |   └── _posts
+└── themes       //主题 文件夹。Hexo 会根据主题来生成静态页面。
+</code></pre><p> <em>配置文件中的各项配置不再赘述,<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">官方文档</a>写的很详细.</em></p>
+<h3 id="开始写作"><a href="#开始写作" class="headerlink" title="开始写作"></a>开始写作</h3><p> 新建一篇文章 </p>
+<pre><code>$ hexo new [layout] welcome
+</code></pre><p>  <em>[layout]是布局参数,默认为post可以不加此参数,修改在_config.yml”的default_layout中.</em></p>
+<p>  档是markdown格式的, 需要按照markdown语法写.如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: welcome</span><br><span class="line">date: 2017-10-20 23:01:31</span><br><span class="line">tags: </span><br><span class="line">- 写作</span><br><span class="line">- 第一次接触hexo博客</span><br><span class="line">---</span><br><span class="line">这是我第一次接触hexo博客, 感觉不错,简洁大方,上手容易.</span><br></pre></td></tr></table></figure></p>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><pre><code>$ # 可以使用简写方式：hexo g , 最终文件会生成到public文件夹下(没有会自动创建)
+$ hexo generate
+</code></pre><h3 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h3><p>执行一下命令，在浏览器中打开：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 进行预览</p>
+<pre><code>$ # 简写：hexo s
+$ hexo server
+INFO  Start processing
+INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
+</code></pre><h3 id="准备发布到github"><a href="#准备发布到github" class="headerlink" title="准备发布到github"></a>准备发布到github</h3><p>在自己的github上建一个仓库, 名字格式 xxx.github.io ,” xxx” 是你的博客名字<br>在仓库下面新建一个index.html, 里面随便写点东西. 然后访问 <a href="https://xxx.github.io/" target="_blank" rel="noopener">https://xxx.github.io/</a> 看效果.<br>如果可以正常访问ok,接下准备部署自己的静态博客.</p>
+<p>1.安装 hexo-deployer-git</p>
+<pre><code>$ npm install hexo-deployer-git
+</code></pre><p>2.修改 _config.yml 配置</p>
+<pre><code>deploy:
+  type: git
+  repo: https://github.com/Sanonz/your-blog.github.io.git
+  branch: master
+  # message: [message]    #这是git默认提交的说明.
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">参数	                    描述   </span><br><span class="line">repo	         | 库（Repository）地址  </span><br><span class="line">branch      | 分支名称。如果您使用的是 GitHub 或 GitCafe 的话，程序会尝试自动检测。   </span><br><span class="line">message	   | 自定义提交信息 &amp;#40;默认为 Site updated: &#123;&#123; now&amp;#40;&apos;YYYY-MM-DD HH:mm:ss&apos;&amp;#41; &#125;&#125; &amp;#41;</span><br></pre></td></tr></table></figure>
+<h3 id="Hexo-一键部署到-GitHub"><a href="#Hexo-一键部署到-GitHub" class="headerlink" title="Hexo 一键部署到 GitHub"></a>Hexo 一键部署到 GitHub</h3><pre><code>$ hexo deploy
+部署成功后查看站点：https://your-blog.github.io
+</code></pre><h3 id="至此-一个简单漂亮的博客就完成了"><a href="#至此-一个简单漂亮的博客就完成了" class="headerlink" title="至此,一个简单漂亮的博客就完成了."></a>至此,一个简单漂亮的博客就完成了.</h3><pre><code>每次有新文章要发布,
+就在本地项目里写,完成后发布到github上.
 
+$ hexo new title.md
+...写作
+$ hexo g 
+...生成静态页面
+$ hexo s
+...本地预览
+$ hexo deploy
+...部署,完成.
+</code></pre><hr>
+<pre><code>插曲: 在我写完这篇博客后,生成静态页面(hexo g) 时报错了.
+&quot;Error: Unable to call `now`, which is undefined or falsey&quot;
+原因:
+这类异常一般是文章中使用了now( ), 小括号( )属于特殊字符,在编译文章时将now( )当函数处理了,结果找不到函数,就报错了。
+解决:
+可以参考Markdown语法第(0)章-特殊字符将now( )的小括号通过&amp;#40; &amp;#41; 进行转换
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://lzymm.github.io/2018/07/21/hello-world/" data-id="cjjvczvum0000dx7anf2ytkh0" class="article-share-link">Share</a>
+      <a data-url="https://lzymm.github.io/2018/07/21/hello-world/" data-id="cjjwdxryc0000d37aw06slesl" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/初次接触hexo/">初次接触hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
@@ -101,6 +157,20 @@
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2018/07/22/lzy-md/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          lzy.md
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
   
 </article>
 
@@ -115,7 +185,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/初次接触hexo/">初次接触hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/初次接触hexo/">初次接触hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/胡写/">胡写</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
     </div>
   </div>
 
@@ -125,7 +195,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/初次接触hexo/" style="font-size: 10px;">初次接触hexo</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+      <a href="/tags/初次接触hexo/" style="font-size: 10px;">初次接触hexo</a> <a href="/tags/胡写/" style="font-size: 10px;">胡写</a> <a href="/tags/随笔/" style="font-size: 20px;">随笔</a>
     </div>
   </div>
 
@@ -147,7 +217,11 @@
       <ul>
         
           <li>
-            <a href="/2018/07/21/hello-world/">hello-world</a>
+            <a href="/2018/07/22/lzy-md/">lzy.md</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/21/hello-world/">快速搭建自己的静态博客 - hexo</a>
           </li>
         
       </ul>
