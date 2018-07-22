@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="lzy&#39;s blog">
 <meta property="og:description" content="hexo 基于nodejs快速搭建自己的博客.参考了官方文档和其他人的blog,很快把自己的博客搭好了. 而且不用申请服务器,直接静态页面托管在github上,简直不要太爽^_~! 准备条件1. 安装nodejs , git 2. 安装hexo-cli         npm install -g hexo-cli 初始化项目&amp;#40;建站&amp;#41;$ hexo init myBlog">
 <meta property="og:locale" content="CN">
-<meta property="og:updated_time" content="2018-07-22T05:37:10.069Z">
+<meta property="og:updated_time" content="2018-07-22T05:39:25.365Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速搭建自己的静态博客 - hexo">
 <meta name="twitter:description" content="hexo 基于nodejs快速搭建自己的博客.参考了官方文档和其他人的blog,很快把自己的博客搭好了. 而且不用申请服务器,直接静态页面托管在github上,简直不要太爽^_~! 准备条件1. 安装nodejs , git 2. 安装hexo-cli         npm install -g hexo-cli 初始化项目&amp;#40;建站&amp;#41;$ hexo init myBlog">
@@ -144,6 +144,9 @@ $ hexo deploy
 这类异常一般是文章中使用了now( ), 小括号( )属于特殊字符,在编译文章时将now( )当函数处理了,结果找不到函数,就报错了。
 解决:
 可以参考Markdown语法第(0)章-特殊字符将now( )的小括号通过&amp;#40; &amp;#41; 进行转换
+
+如果还有其他问题,就检查一下文档中有没有用{} () []等特殊符号的地方,有的话,将包含特殊符号的文本包在
+markdown的文本符号里,不让markdown转义.
 </code></pre>
       
     </div>
